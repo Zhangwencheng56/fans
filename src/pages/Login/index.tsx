@@ -1,8 +1,10 @@
 import React, { useState } from "react";
-import { Form, Input, Button, Radio, Image } from "antd-mobile";
+import { Form, Input, Button, Image } from "antd-mobile";
+import { useNavigate } from "react-router-dom";
 import "./style.scss";
 
 export default function Login() {
+  const navigate = useNavigate();
   const [form] = Form.useForm();
   const [code, setCode] = useState("");
   const [isRead, setIsRead] = useState(false);
@@ -10,12 +12,6 @@ export default function Login() {
   const [btnDisabled, setBtnDisable] = useState(true);
   const [isCounting, setIsCounting] = useState(false);
   const [time, setTime] = useState(3);
-  const checkMobile = (_: any, value: any) => {
-    if (value.realValue) {
-      return Promise.resolve();
-    }
-    return Promise.reject(new Error("手机号不能为空!"));
-  };
 
   const handleChecked = (value: any) => {
     setIsRead(!isRead);
@@ -48,12 +44,13 @@ export default function Login() {
 
   const onSubmit = () => {
     const values = form.getFieldsValue();
+    navigate("/home");
     console.log(values, "------values");
   };
 
   return (
     <div className="container_login">
-      <Image src="../../asset/logo.jpeg" width={100} height={100} fit="cover" />
+      <Image src="https://images.unsplash.com/photo-1567945716310-4745a6b7844b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=60" width={100} height={100} fit="cover" />
       <Form
         layout="horizontal"
         className="container_login"

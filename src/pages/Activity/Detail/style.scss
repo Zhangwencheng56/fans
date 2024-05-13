@@ -1,0 +1,41 @@
+.container_activity_detail {
+    .detail_wraper {
+        padding: 20px !important;
+
+        h2 {
+            margin-bottom: 30px;
+        }
+
+        li {
+            display: flex;
+            align-items: center;
+            // margin-bottom: 20px !important;
+            padding: 20px 0 !important;
+            border-bottom: 1px solid #eee;
+
+            .adm-image.adm-avatar {
+                border-radius: 50%;
+                margin-right: 20px;
+            }
+
+            .that_content {
+                .item_left {
+                    h3 {
+                        margin-bottom: 10px;
+                    }
+
+                    .status_fail {
+                        color: #bd3124;
+                    }
+                }
+
+                flex: 1;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: flex-end;
+            }
+        }
+
+    }
+}
