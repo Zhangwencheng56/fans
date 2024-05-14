@@ -1,41 +1,75 @@
 .container_activity_detail {
-    .detail_wraper {
-        padding: 20px !important;
+    // .detail_wraper {
+    //     padding: 20px !important;
 
-        h2 {
-            margin-bottom: 30px;
+    //     h2 {
+    //         margin-bottom: 30px;
+    //     }
+
+    //     li {
+    //         display: flex;
+    //         align-items: center;
+    //         // margin-bottom: 20px !important;
+    //         padding: 20px 0 !important;
+    //         border-bottom: 1px solid #eee;
+
+    //         .adm-image.adm-avatar {
+    //             border-radius: 50%;
+    //             margin-right: 20px;
+    //         }
+
+    //         .that_content {
+    //             .item_left {
+    //                 h3 {
+    //                     margin-bottom: 10px;
+    //                 }
+
+    //                 .status_fail {
+    //                     color: #bd3124;
+    //                 }
+    //             }
+
+    //             flex: 1;
+    //             display: flex;
+    //             flex-direction: row;
+    //             justify-content: space-between;
+    //             align-items: flex-end;
+    //         }
+    //     }
+
+    // }
+
+    .that_detail_wraper {
+        padding: 0 10px !important;
+
+        h3 {
+            margin: 10px 0 20px 0;
         }
 
-        li {
-            display: flex;
-            align-items: center;
-            // margin-bottom: 20px !important;
-            padding: 20px 0 !important;
-            border-bottom: 1px solid #eee;
+        .adm-list-body {
+            border-top: none;
 
-            .adm-image.adm-avatar {
-                border-radius: 50%;
-                margin-right: 20px;
-            }
+            .adm-list-item {
+                padding-left: 0;
 
-            .that_content {
-                .item_left {
-                    h3 {
-                        margin-bottom: 10px;
-                    }
-
-                    .status_fail {
+                &.status_fail {
+                    .adm-list-item-description {
                         color: #bd3124;
                     }
                 }
 
-                flex: 1;
-                display: flex;
-                flex-direction: row;
-                justify-content: space-between;
-                align-items: flex-end;
+                .adm-list-item-content {
+                    padding: 10px 0;
+
+                    .adm-list-item-description {
+                        margin-top: 10px;
+                    }
+
+                    .adm-list-item-content-extra{
+                        font-size: 14px;
+                    }
+                }
             }
         }
-
     }
 }

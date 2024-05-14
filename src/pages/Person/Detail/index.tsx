@@ -1,7 +1,7 @@
-import React from 'react'
+import React from "react";
 
-export default function PersonDetail() {
-  return (
-    <div>index</div>
-  )
-}
+const PersonDetail = () => {
+  return <div className="container_person_detail"></div>;
+};
+
+export default PersonDetail;
