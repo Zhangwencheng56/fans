@@ -7,6 +7,7 @@ import ActivityDetail from "../pages/Activity/Detail";
 import ActivityChoose from "../pages/Activity/Choose";
 import PersonList from "../pages/Person/List";
 import PersonDetail from "../pages/Person/Detail";
+import ShopList from "../pages/Shop/List";
 
 const AppRouter = () => {
   return (
@@ -19,6 +20,7 @@ const AppRouter = () => {
         <Route path="/activity/choose" element={<ActivityChoose />} />
         <Route path="/person/list" element={<PersonList />} />
         <Route path="/person/detail" element={<PersonDetail />} />
+        <Route path="/shop/list" element={<ShopList />} />
         {/* 其他页面路由 */}
       </Routes>
     </Router>
