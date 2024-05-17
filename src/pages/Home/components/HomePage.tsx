@@ -1,7 +1,9 @@
 import { Swiper } from "antd-mobile";
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 export default function HomePage() {
+  const navigate: any = useNavigate()
   return (
     <>
       <div className="that_banner_wraper">
@@ -19,49 +21,32 @@ export default function HomePage() {
         </Swiper>
       </div>
       <div className="that_main_wraper">
-        {/* 团队介绍 */}
-        <div>
-          <div>
-            <i className="iconfont">&#xe62d;</i>
-          </div>
-          <div>团队介绍</div>
-        </div>
         {/* 成员列表 */}
-        <div>
+        <li>
           <div>
             <i className="iconfont">&#xe7cc;</i>
           </div>
           <div>人员列表</div>
-        </div>
+        </li>
 
         {/* 活动日程 */}
-        <div>
+        <li>
           <div>
             <i className="iconfont">&#xe614;</i>
           </div>
           <div>活动日程</div>
-        </div>
-      </div>
+        </li>
 
-      <ul className="that_shop_wraper">
-        {new Array(6).fill(null).map((item: any, index) => {
-          return (
-            <li>
-              <div className="item_img">
-                <img
-                  src="https://images.unsplash.com/photo-1567945716310-4745a6b7844b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=60"
-                  alt=""
-                />
-              </div>
-              <h3>商品名称</h3>
-              <div className="item_footer">
-                ￥<i>999.9</i>
-                <span>100人已付款</span>
-              </div>
-            </li>
-          );
-        })}
-      </ul>
+        {/* 商城 */}
+        <li onClick={() => {
+                navigate("/shop/list");
+              }}>
+          <div>
+            <i className="iconfont">&#xe62d;</i>
+          </div>
+          <div>商城</div>
+        </li>
+      </div>
     </>
   );
 }

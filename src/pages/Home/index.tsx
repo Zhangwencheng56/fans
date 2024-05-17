@@ -1,6 +1,7 @@
 import React from "react";
 import { NavBar, Swiper, Tabs } from "antd-mobile";
 import HomePage from "./components/HomePage";
+import ComponentActivity from "./components/Activity";
 import "./style.scss";
 
 const Home = () => {
@@ -35,10 +36,12 @@ const Home = () => {
           title={
             <>
               <i className="iconfont">&#xe67b;</i>
-              <div>商城</div>
+              <div>特典会</div>
             </>
           }
-        ></Tabs.Tab>
+        >
+          <ComponentActivity />
+        </Tabs.Tab>
         <Tabs.Tab
           key="3"
           title={

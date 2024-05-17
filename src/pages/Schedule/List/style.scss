@@ -1,0 +1,50 @@
+.container_schedule_list {
+
+    .adm-list.adm-list-default {
+        border-top: none;
+
+        .adm-list-item-content-main {
+            display: flex;
+            align-items: center;
+            flex: 1;
+        }
+
+        .that_content_wraper {
+            display: flex;
+            flex-direction: column;
+            margin-left: 20px;
+
+            .item_type {
+                width: 80px;
+                text-align: center;
+                margin-bottom: 20px;
+            }
+
+            .item_tedian {
+                border: 1px solid rgb(19, 152, 63);
+                color: rgb(19, 152, 63);
+            }
+
+            .item_zhibo {
+                border: 1px solid rgb(152, 34, 34);
+                color: rgb(152, 34, 34);
+            }
+
+            .item_yanchu {
+                border: 1px solid rgb(255, 183, 0);
+                color: rgb(255, 183, 0);
+            }
+
+            .item_detail {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+
+                &>div:first-child {
+                    margin-right: 20px;
+                }
+            }
+        }
+    }
+
+}

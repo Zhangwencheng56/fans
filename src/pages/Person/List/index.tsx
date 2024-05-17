@@ -55,7 +55,7 @@ const PersonList = () => {
             <li
               key={index}
               onClick={() => {
-                navigate("/activity/choose", { state: { detail: item } });
+                navigate("/person/detail", { state: { detail: item } });
               }}
             >
               <Avatar

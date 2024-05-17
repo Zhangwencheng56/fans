@@ -1,9 +1,9 @@
 .container_home {
-    height: 100%;
     display: flex;
     flex-direction: column;
 
     .that_banner_wraper {
+        // margin-top: 20px;
         padding: 5px;
         height: 50%;
 
@@ -24,7 +24,7 @@
         display: flex;
         justify-content: space-around;
 
-        &>div {
+        li {
 
             &>div:first-child {
                 background-color: #eee;
@@ -37,6 +37,10 @@
                 i {
                     font-size: 24px;
                 }
+            }
+
+            &>div:last-child {
+                text-align: center;
             }
         }
     }
@@ -97,6 +101,7 @@
         background-color: #f7f7f7;
 
         .adm-tabs-header {
+            z-index: 999;
             position: fixed;
             bottom: 0;
             left: 0;
@@ -116,6 +121,70 @@
                         font-size: 22px;
                     }
                 }
+            }
+        }
+    }
+
+    .that_activity_list {
+        margin-bottom: 60px;
+        display: flex;
+        flex-direction: column;
+
+        .item_status {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+
+        .item_activity_on {
+            display: flex;
+            padding: 5px;
+            margin-bottom: 20px;
+            border: #BBB 1px solid;
+
+            .item_img_wraper {
+                width: 50%;
+                margin-right: 20px;
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            .item_content {
+                display: flex;
+                flex: 1;
+                flex-direction: column;
+                justify-content: space-between;
+
+                .item_join {
+
+                    text-align: center;
+                    display: flex;
+                    justify-content: flex-end;
+
+                    div {
+                        padding: 2px 8px;
+                        color: white;
+                        background-color: #BBB;
+                    }
+
+                }
+            }
+        }
+
+        .item_activity_waiting {
+            margin-bottom: 20px;
+            border: #BBB solid 1px;
+            text-align: center;
+
+            h3 {
+                font-size: 16px;
+                margin: 10px 0;
+            }
+
+            div {
+                margin-bottom: 10px;
+                color: rgb(80, 78, 78)
             }
         }
     }
